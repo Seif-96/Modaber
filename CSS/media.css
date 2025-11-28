@@ -1,0 +1,464 @@
+@media (min-width: 640px) {
+  /*   <!-- part one navbar --> */
+  /* right side */
+  .header .right {
+    display: flex;
+    column-gap: 1rem;
+    align-items: center;
+    width: fit-content;
+  }
+  .header .right .coins-icon {
+    width: 3rem;
+    height: 3rem;
+    background-color: #344aec;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header .right .coins-icon img {
+    width: 1.4rem;
+  }
+  .header .right .text h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .header .right .text p {
+    margin-top: 0;
+  }
+  /* left side */
+  .header .left .right {
+    display: flex;
+    column-gap: 0.3rem;
+  }
+  .header .left {
+    margin-top: 0;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    column-gap: 0.5rem;
+  }
+  .header .left .info {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.5rem;
+  }
+  /* hidden */
+  .header .left .info .name .the-name {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+  .header .nav-body .information {
+    width: fit-content;
+    height: fit-content;
+    border-radius: 0.625rem;
+    margin-top: 0;
+    padding: 0.25rem 0.5rem;
+  }
+  .header .nav-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1rem;
+  }
+  .header .nav-body .contin {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+  }
+  /*     <!-- part 4 recent transactions --> */
+  .recent-transactions .perant table {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  /* Aside */
+  aside {
+    display: block;
+    width: fit-content;
+    padding: 0.75rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: fit-content;
+    overflow: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #9ca3af4d transparent;
+    background-color: #fff;
+    border-left: 0.0625rem solid #e5e7eb;
+    box-shadow: -0.0625rem 0 0.3125rem #e3e4e6;
+  }
+  aside .top {
+    display: flex;
+    column-gap: 1rem;
+    align-items: center;
+    margin-bottom: 1.8rem;
+  }
+  aside .top .coins-icon {
+    width: 2.6rem;
+    height: 2.6rem;
+    background-color: #344aec;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  aside img {
+    width: 1.3rem;
+  }
+  aside .text {
+    display: none;
+  }
+  /* home-bage */
+  aside .home-bage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #4a5565;
+  }
+  aside .home-bage .head-line {
+    background-color: #eff6ff;
+    color: #1447e6;
+    border: 0.0625rem solid #b9c7f1;
+    cursor: pointer;
+  }
+  aside .home-bage .line:hover {
+    cursor: pointer;
+    background-color: #f5f7f8;
+  }
+  aside .home-bage .line {
+    transition: background-color 0.3s;
+  }
+  aside .home-bage .lines {
+    border-radius: 0.625rem;
+    padding: 0.625rem 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* home-buttom */
+  aside .home-buttom {
+    color: #364153;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1.4rem;
+  }
+  aside .home-buttom .lines {
+    border-radius: 0.625rem;
+    transition: all 0.3s;
+  }
+  aside .home-buttom .lines:hover {
+    cursor: pointer;
+    background-color: #fafafa;
+    transform: translate(0.0625rem, 0.0625rem);
+    color: black;
+  }
+  aside .home-buttom .icons {
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 0.625rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  aside .home-buttom .line-1 .icons {
+    background-color: #e8f0fc;
+  }
+  aside .home-buttom .line-2 .icons {
+    background-color: #d5eedf;
+  }
+  aside .home-buttom .line-3 .icons {
+    background-color: #faf4ff;
+  }
+  aside .home-buttom .line-4 .icons {
+    background-color: #faece2;
+  }
+  /* left-cards */
+  .left-cards {
+    margin-right: 4.375rem;
+  }
+  /*   <!-- part one navbar --> */
+  /* hidden text*/
+  .header .left .info .name .text {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #6a7282;
+  }
+  /* // */
+  .header .left .info .name .the-name {
+    font-size: 14px;
+  }
+  .header .nav-body {
+    margin-top: 2rem;
+    padding: 1.5rem;
+  }
+  /* <!-- part two Expenses --> */
+  .expenses-cards .cards {
+    display: flex;
+    column-gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  .expenses-cards .cards .card {
+    flex-grow: 1;
+    margin-top: 0;
+  }
+  .expenses-cards .cards .money {
+    font-size: 1.5rem;
+  }
+  /* Grid */
+  .the-grid {
+    margin: auto;
+    display: grid;
+    /* column-gap: 12px; */
+    grid-template-columns: repeat(2, 50%);
+    grid-template-areas:
+      "item1 item2"
+      "item3 item3"
+      "item4 item5"
+      "item6 item7";
+  }
+  /*       <!-- الأنشطة الحديثة -->
+  <!-- part 3  Modern activities --> */
+  .modern-activities {
+    grid-area: item1;
+  }
+
+  /*       <!-- المعاملات الأخيرة -->
+  <!-- part 4 recent transactions --> */
+  .recent-transactions {
+    grid-area: item3;
+    margin-top: 1rem;
+  }
+  .recent-transactions .container {
+    width: 97%;
+  }
+  /*       <!-- الفواتير الشهرية -->
+  <!-- part 5 monthly bills --> */
+  .monthly-bills {
+    grid-area: item4;
+  }
+  /*       <!-- نظرة عامة على الميزانية -->
+  <!-- part 6 budget --> */
+  .budget {
+    grid-area: item6;
+  }
+
+  /* text */
+  .budget .perant .conten .header-card .text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .budget .perant .conten .header-card .text .left {
+    align-self: flex-end;
+  }
+
+  /* text */
+  .budget .perant .conten .cards .text-top {
+    display: flex;
+    align-items: flex-start;
+  }
+  .budget .perant .conten .cards .text-top .text {
+    flex-direction: column;
+  }
+
+  .budget .perant .conten .cards .text-top .text .left {
+    align-self: flex-end;
+  }
+
+  /*       <!-- الدخل مقابل المصروفات -->
+  <!-- part 7 Income & expenses --> */
+  .income-expenses {
+    grid-area: item2;
+  }
+  .income-expenses .perant {
+    width: 98%;
+    height: 325px;
+  }
+
+  /*       <!-- ملخص الحساب -->
+  <!-- part 8 Account Summary --> */
+  .account-summary {
+    grid-area: item5;
+  }
+  .account-summary .perant {
+    height: 400px;
+  }
+  .account-summary .perant .conten .cards .text-top {
+    align-items: flex-start;
+  }
+  /* text */
+  .account-summary .perant .conten .cards .text-top .text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .account-summary .perant .conten .cards .text-top .text .left {
+    align-self: flex-end;
+  }
+
+  /*       <!-- وسائل الدفع -->
+  <!-- part 9 Payment methods --> */
+  .payment-methods {
+    grid-area: item7;
+  }
+}
+@media (min-width: 1280px) {
+  /* Aside */
+  aside {
+    padding: 1.25rem 1.5rem;
+    width: 16rem;
+  }
+  aside .top .coins-icon {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  aside .top .coins-icon img {
+    width: 1.5rem;
+  }
+  aside .text {
+    display: block;
+  }
+  aside .top .text h2 {
+    font-size: 2.25rem;
+    font-weight: 700;
+  }
+  aside .top .text p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #4a5565;
+    margin-top: 0.25rem;
+  }
+  /* home-bage */
+  aside .home-bage .lines {
+    border-radius: 0.625rem;
+    padding: 0.75rem 1rem;
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  aside .home-bage {
+    row-gap: 1rem;
+  }
+  /* home-buttom */
+  aside .home-buttom .head-line .text {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #364153;
+  }
+  aside .home-buttom .lines {
+    border-radius: 0.625rem;
+    padding: 0.75rem 1rem;
+    display: flex;
+    align-items: center;
+    column-gap: 0.6rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #626b79;
+  }
+  aside .home-buttom {
+    row-gap: 0.5rem;
+    margin-top: 2rem;
+    align-items: flex-start;
+  }
+  /* left-cards */
+  .left-cards {
+    margin-right: 16rem;
+  }
+  /* Grid */
+  .the-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 33.33333%);
+    grid-template-rows: auto auto 370px auto auto auto;
+    grid-template-areas:
+      "item2 item1 item1"
+      "item3 item1 item1"
+      "item6 item5 item4"
+      "item6 item7 item4"
+      ". . item4"
+      ". . item4";
+  }
+  /*       <!-- الأنشطة الحديثة -->
+  <!-- part 3  Modern activities --> */
+  .modern-activities {
+    grid-area: item2;
+  }
+  /*       <!-- المعاملات الأخيرة -->
+  <!-- part 4 recent transactions --> */
+  .recent-transactions {
+    grid-area: item1;
+    margin-top: 0;
+  }
+  .recent-transactions .perant {
+    padding: 1.5rem;
+  }
+  .recent-transactions .perant table {
+    line-height: 1.62rem;
+  }
+  .recent-transactions .perant table tbody .tr-one .t-icon img {
+    height: 2.5rem;
+  }
+  .recent-transactions .perant table tbody .tr-four .t-icon img {
+    height: 2.5rem;
+  }
+  .recent-transactions .perant table tbody .tr-five .t-icon img {
+    height: 2.5rem;
+  }
+
+  /*       <!-- الفواتير الشهرية -->
+  <!-- part 5 monthly bills --> */
+  .monthly-bills {
+    grid-area: item3;
+  }
+  /*       <!-- نظرة عامة على الميزانية -->
+  <!-- part 6 budget --> */
+  .budget {
+    grid-area: item6;
+  }
+  /*       <!-- الدخل مقابل المصروفات -->
+  <!-- part 7 Income & expenses --> */
+  .income-expenses {
+    grid-area: item5;
+  }
+  .income-expenses .perant {
+    height: 350px;
+  }
+  /*       <!-- ملخص الحساب -->
+  <!-- part 8 Account Summary --> */
+  .account-summary {
+    grid-area: item7;
+  }
+  .account-summary .perant {
+    padding: 1.5rem;
+    height: fit-content;
+  }
+  .account-summary .perant .conten .cards .text-top {
+    align-items: center;
+  }
+  /* text */
+  .account-summary .perant .conten .cards .text-top .text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .account-summary .perant .conten .cards .text-top .text .left {
+    align-self: flex-start;
+  }
+  /*       <!-- وسائل الدفع -->
+  <!-- part 9 Payment methods --> */
+  .payment-methods {
+    grid-area: item4;
+  }
+}

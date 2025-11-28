@@ -1,0 +1,1242 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+  font-family: IBMPlexSansArabic, sans-serif;
+}
+@font-face {
+  font-family: IBMPlexSansArabic;
+  src: url(../fonts/IBMPlexSansArabic-Regular.ttf);
+}
+body {
+  direction: rtl;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+::selection {
+  color: #fff;
+  background-color: blue;
+}
+.container {
+  width: 95%;
+  margin-inline: auto;
+}
+img {
+  width: 100%;
+  vertical-align: middle;
+  object-fit: cover;
+}
+ul li {
+  list-style: none;
+}
+main {
+  padding: 1rem;
+  background-color: #f9fafb;
+}
+/* Aside */
+aside {
+  display: none;
+}
+/* left side */
+/*   <!-- part one navbar --> */
+.header .nav-body {
+  background: linear-gradient(to right, #f6f8fc, #fefefe, #f4f8fd);
+  padding: 1rem;
+  border: 0.0625rem solid #eef0f3;
+  box-shadow: 0 0.0625rem 0.125rem #e6ebf0;
+  border-radius: 1.25rem;
+  margin-top: 1rem;
+}
+/* right side */
+.header .right {
+  display: flex;
+  column-gap: 1rem;
+  align-items: center;
+}
+.header .right .coins-icon {
+  width: 3rem;
+  height: 3rem;
+  background-color: #344aec;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .right .coins-icon img {
+  width: 1.2rem;
+}
+.header .right .text h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.header .right .text p {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #4a5565;
+  margin-top: 0.25rem;
+}
+/* left side */
+.header .left .image {
+  width: 2rem;
+  border-radius: rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.0625rem solid #e5e7eb;
+  background-color: #f8f8f8;
+  padding: 0.4375rem;
+  border-radius: 0.625rem;
+  position: relative;
+  transition: background-color 0.3s;
+}
+.header .left .image-2 .red {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+  background-color: red;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 0.75rem;
+  font-weight: 600;
+  width: 0.75rem;
+  height: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .left .right {
+  display: flex;
+  column-gap: 0.3rem;
+}
+.header .left .right .image:hover {
+  background-color: #f3f4f6;
+}
+.header .left {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .left .info {
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.625rem;
+  border: 0.0625rem solid #e5e7eb;
+  box-shadow: 0 0.0625rem 0.1875rem #d1d2d4;
+  transition: box-shadow 0.5s;
+  background-color: #fff;
+}
+.header .left .avatar {
+  width: 2.0625rem;
+  border-radius: 0.625rem;
+  border: 0.0625rem solid #e5e7eb;
+}
+.header .left .avatar img {
+  border-radius: 0.625rem;
+}
+.header .left .info:hover {
+  box-shadow: 0 0.1875rem 0.25rem #d1d2d4;
+}
+/* headding */
+.header .left .info .name p {
+  display: none;
+}
+/* // */
+.header .nav-body .information .green {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  animation: backG 3s infinite alternate;
+}
+/* animation */
+@keyframes backG {
+  0% {
+    background-color: #03ca53;
+  }
+  50% {
+    background-color: #03a343;
+  }
+  100% {
+    background-color: #03ca53;
+  }
+}
+.header .nav-body .information {
+  background-color: #f0fdf4;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  justify-content: center;
+  padding: 0.375rem 0.75rem;
+  border: 0.0625rem solid #dbfce7;
+  border-radius: 0.3125rem;
+}
+.header .nav-body .information .text {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #008236;
+}
+/* <!-- part 2 Expenses --> */
+.expenses-cards .cards .card {
+  margin-top: 1.25rem;
+  padding: 2rem;
+  border-radius: 1.25rem;
+  border: 0.0625rem solid #ebeff5;
+  box-shadow: 0 0.125rem 0.125rem #d9dce0;
+  background-color: #fff;
+}
+.expenses-cards .cards .card img {
+  transform: rotate(180deg);
+  width: 0.9rem;
+}
+.expenses-cards .cards .card-3 img {
+  transform: rotate(360deg);
+}
+.expenses-cards .cards .info {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #6a7282;
+  margin-bottom: 0.5rem;
+}
+.expenses-cards .cards .money {
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+.expenses-cards .cards .rate {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #00a63e;
+}
+.expenses-cards .cards .color-red img {
+  filter: hue-rotate(-140deg) saturate(3);
+}
+.expenses-cards .cards .color-red {
+  color: rgb(212, 33, 33);
+}
+/* part 3 Modern activities */
+.modern-activities .container {
+  padding: 1rem;
+  border: 0.0625rem solid #e5e7eb;
+  background-color: #fff;
+  border-radius: 1.25rem;
+  margin-top: 1.5rem;
+  box-shadow: 0 0.125rem 0.125rem #d9dce0;
+}
+.modern-activities .container .text-head h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+.modern-activities .container .cards {
+  padding: 0.75rem;
+  border-radius: 0.625rem;
+  margin-bottom: 0.625rem;
+}
+.modern-activities .container .card-1 {
+  background-color: #eff6ff;
+  border-left: 0.3125rem solid #155dfc;
+}
+.modern-activities .container .card-2 {
+  background-color: #f0fdf4;
+  border-left: 0.25rem solid #00a63e;
+}
+.modern-activities .container .cards .icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modern-activities .container .card-1 .icon {
+  background-color: #dbeafe;
+}
+.modern-activities .container .card-2 .icon {
+  background-color: #dbfce7;
+}
+.modern-activities .container .cards .icon img {
+  width: 1.2rem;
+}
+.modern-activities .container .cards .conten {
+  display: flex;
+  column-gap: 1rem;
+}
+.modern-activities .container .cards .conten .child-conten {
+  flex-grow: 1;
+}
+.modern-activities .container .cards .conten .child-conten p,
+.time {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #4a5565;
+}
+.modern-activities .container .cards .add-now-accunt {
+  display: flex;
+  justify-content: space-between;
+}
+.modern-activities .container .cards .add-now-accunt h4 {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #101828;
+}
+.modern-activities .container .cards .add-now-accunt span {
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+.modern-activities .container .card-1 .add-now-accunt span {
+  color: #155dfc;
+}
+.modern-activities .container .card-2 .add-now-accunt span {
+  color: #00a63e;
+}
+.modern-activities .container .button {
+  border-top: 0.125rem solid #f3f4f6;
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+.modern-activities .container .button button {
+  width: 100%;
+  color: #1447e6;
+  border: 0;
+  font-size: 0.875rem;
+  font-weight: 500;
+  background-color: #fff;
+  cursor: pointer;
+}
+/*  part 4 recent transactions   */
+.recent-transactions {
+  margin-top: 2rem;
+}
+.recent-transactions .perant {
+  padding: 1rem;
+  border: 0.0625rem solid #e5e7eb;
+  background-color: #fff;
+  border-radius: 1.25rem;
+  margin-top: 1.5rem;
+  box-shadow: 0 0.125rem 0.125rem #d9dce0;
+}
+.recent-transactions .perant .header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.recent-transactions .perant .header h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #101828;
+}
+.recent-transactions .perant .header .fa-chevron {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #2b3b5a;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.recent-transactions .perant .header .fa-chevron:hover {
+  color: #101828;
+}
+/* table scrolling */
+.recent-transactions .body {
+  width: 100%;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #d1d5db #f3f4f6;
+  -webkit-overflow-scrolling: touch;
+}
+.recent-transactions .perant table {
+  width: 600px;
+  text-align: right;
+  border-collapse: collapse;
+}
+.recent-transactions .perant table th {
+  padding: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #364153;
+}
+.recent-transactions .perant table tbody td {
+  padding: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #364153;
+  border-top: 0.0625rem solid #f9fafb;
+}
+.recent-transactions .perant table tbody .tr-one td {
+  border-top: 0.0625rem solid #e5e6e7;
+}
+/* i */
+.recent-transactions .perant table tbody i {
+  margin-left: 0.1875rem;
+}
+/* .all-tr-avatar */
+.recent-transactions .perant table tbody .all-tr .icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.recent-transactions .perant table tbody .all-tr .t-icon img {
+  width: 1rem;
+}
+/* tr-one */
+/* td-one */
+.recent-transactions .perant table tbody .t-icon {
+  display: flex;
+  column-gap: 1rem;
+}
+.recent-transactions .perant table tbody .t-icon img {
+  width: 2.5rem;
+  border-radius: 50%;
+}
+.recent-transactions .perant table tbody .t-icon .p-one {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #101828;
+}
+.recent-transactions .perant table tbody .t-icon .p-two {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #6a7282;
+}
+/* td-two */
+.recent-transactions .perant table tbody .td-two .lines {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.125rem 0.625rem;
+  border-radius: 0.625rem;
+}
+.recent-transactions .perant table tbody .td-two .line-1 {
+  color: #016630;
+  background-color: #dbfce7;
+}
+/* td-three */
+.recent-transactions .perant table tbody .td-three {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #6a7282;
+}
+/* td-four */
+.recent-transactions .perant table tbody .td-four .lines {
+  background-color: #dbfce7;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #016630;
+  padding: 0.125rem 0.625rem;
+  border-radius: 0.625rem;
+}
+/* td-five */
+.recent-transactions .perant table tbody .td-five {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #101828;
+}
+.recent-transactions .perant table tbody .tr-one .td-five {
+  color: #00a63e;
+}
+/* tr-two */
+.recent-transactions .perant table tbody .tr-two .icon {
+  background-color: #ffedd4;
+}
+.recent-transactions .perant table tbody .tr-two .line-2 {
+  color: #9f2d00;
+  background-color: #ffedd4;
+}
+/* tr-three */
+.recent-transactions .perant table tbody .tr-three .icon {
+  background-color: #dbeafe;
+}
+.recent-transactions .perant table tbody .td-two .line-3 {
+  color: #193cb8;
+  background-color: #dbeafe;
+}
+/* tr-four */
+.recent-transactions .perant table tbody .td-two .line-4 {
+  color: #6e11b0;
+  background-color: #f3e8ff;
+}
+/* tr-five */
+.recent-transactions .perant table tbody .td-two .line-5 {
+  color: #016630;
+  background-color: #dbfce7;
+}
+.recent-transactions .perant table tbody .tr-five .td-five {
+  color: #00a63e;
+}
+/* tr-six */
+.recent-transactions .perant table tbody .tr-six .icon {
+  background-color: #ffe2e2;
+}
+.recent-transactions .perant table tbody .td-two .line-6 {
+  color: #9f0712;
+  background-color: #ffe2e2;
+}
+.recent-transactions .perant table tbody .td-four .line-6 {
+  background-color: #fef9c2;
+  color: #894b00;
+}
+/* tr-seven */
+.recent-transactions .perant table tbody .tr-seven .icon {
+  background-color: #e0e7ff;
+}
+.recent-transactions .perant table tbody .td-two .line-7 {
+  color: #372aac;
+  background-color: #e0e7ff;
+}
+/* tr-Eight */
+.recent-transactions .perant table tbody .tr-eight .icon {
+  background-color: #cefafe;
+}
+.recent-transactions .perant table tbody .td-two .line-8 {
+  color: #34616d;
+  background-color: #cefafe;
+}
+/* tr-nine */
+.recent-transactions .perant table tbody .tr-nine .icon {
+  background-color: #d0fae5;
+}
+.recent-transactions .perant table tbody .td-two .line-9 {
+  color: #006045;
+  background-color: #d0fae5;
+}
+/* part 5 monthly bills */
+.monthly-bills .perant {
+  padding: 1rem;
+  border: 0.0625rem solid #e5e7eb;
+  background-color: #fff;
+  border-radius: 1.25rem;
+  margin-top: 1.5rem;
+  box-shadow: 0 0.125rem 0.125rem #d9dce0;
+}
+.monthly-bills .perant .header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.monthly-bills .perant .header h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #101828;
+}
+.monthly-bills .perant .header .fa-chevron {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #2b3b5a;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.monthly-bills .perant .header .fa-chevron:hover {
+  color: #101828;
+}
+/* text-centar */
+.monthly-bills .text-centar {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.monthly-bills .text-centar .p-top {
+  font-size: 1.675rem;
+  font-weight: 700;
+}
+.monthly-bills .text-centar .p-bottom {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #6a7282;
+}
+/* conten */
+.monthly-bills .perant .conten {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  justify-content: center;
+}
+/* cards */
+.monthly-bills .perant .conten .cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9fafb;
+  border-radius: 0.625rem;
+  padding: 0.75rem;
+  border: 0.0625rem solid #e5e7eb;
+  width: 48%;
+}
+.monthly-bills .perant .conten .icon {
+  width: 1.9rem;
+  height: 1.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  margin-bottom: 0.3125rem;
+}
+.monthly-bills .perant .conten .icon img {
+  width: 1rem;
+}
+/* cards p*/
+.monthly-bills .perant .conten .cards .p-top,
+.p-bottom {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #6a7282;
+}
+.monthly-bills .perant .conten .cards .p-between {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #101828;
+}
+/* card-1 */
+.monthly-bills .perant .conten .card-1 .icon {
+  background-color: #dbeafe;
+}
+.monthly-bills .perant .conten .card-1 .p-bottom {
+  color: #fb2c36;
+}
+/* card-2 */
+.monthly-bills .perant .conten .card-2 .icon {
+  background-color: #fef9c2;
+}
+.monthly-bills .perant .conten .card-2 .p-bottom {
+  color: #ff6900;
+}
+/* card-3 */
+.monthly-bills .perant .conten .card-3 .icon {
+  background-color: #dbfce7;
+}
+.monthly-bills .perant .conten .card-3 .p-bottom {
+  color: #00c951;
+}
+/* card-4 */
+.monthly-bills .perant .conten .card-4 .icon {
+  background-color: #ffe2e2;
+}
+.monthly-bills .perant .conten .card-4 .p-bottom {
+  color: #6a7282;
+}
+/* part 6 budget */
+/* header */
+.budget .perant {
+  padding: 1rem;
+  border: 0.0625rem solid #e5e7eb;
+  background-color: #fff;
+  border-radius: 1.25rem;
+  margin-top: 1.5rem;
+  box-shadow: 0 0.125rem 0.125rem #d9dce0;
+}
+.budget .perant .header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.budget .perant .header h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #101828;
+}
+.budget .perant .header .fa-chevron {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #2b3b5a;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.budget .perant .header .fa-chevron:hover {
+  color: #101828;
+}
+/* conten */
+/* header-card */
+.budget .perant .conten .header-card {
+  background-color: #eef2ff;
+  border-radius: 0.625rem;
+  padding: 0.75rem;
+  border: 0.0625rem solid #e5e7eb;
+}
+
+/* text */
+.budget .perant .conten .header-card .text {
+  display: flex;
+  justify-content: space-between;
+}
+.budget .perant .conten .header-card .text .right .top {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #155dfc;
+}
+.budget .perant .conten .header-card .text .right .bottom {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1c398e;
+}
+.budget .perant .conten .header-card .text .left .top {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #6a7282;
+}
+.budget .perant .conten .header-card .text .left .bottom {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #00a63e;
+}
+/* rate */
+.budget .perant .conten .header-card .rate {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #4a5565;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.25rem;
+}
+/* bg-lines */
+.budget .perant .conten .header-card .bg-lines .f-line {
+  background-color: #e5e7eb;
+  width: 100%;
+  height: 0.4375rem;
+  border-radius: 5px;
+}
+.budget .perant .conten .header-card .bg-lines .l-line {
+  background-color: #357cff;
+  width: 82.5%;
+  height: inherit;
+  border-radius: 5px;
+}
+/* cards */
+.budget .perant .conten .cards {
+  background-color: #f9fafb;
+  border-radius: 0.625rem;
+  padding: 0.75rem;
+  border: 0.0625rem solid #e5e7eb;
+  margin-top: 1rem;
+  transition: all 0.3s;
+}
+.budget .perant .conten .icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  margin-bottom: 0.3125rem;
+}
+.budget .perant .conten .icon img {
+  width: 1.2rem;
+}
+/* cards hover */
+.budget .perant .conten .cards:hover {
+  background-color: #f5f6f8;
+  box-shadow: 0rem 0.15rem 0.3rem #e5e7eb;
+  border: 0.0925rem solid #d2d8e6;
+  transform: translateY(-0.0625rem);
+}
+/* text-top */
+.budget .perant .conten .cards .text-top {
+  display: flex;
+  align-items: center;
+  column-gap: 0.375rem;
+  margin-bottom: 0.5rem;
+}
+/* text */
+.budget .perant .conten .cards .text-top .text {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+.budget .perant .conten .cards .text-top .text .right .top {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #101828;
+}
+.budget .perant .conten .cards .text-top .text .right .bottom {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #6a7282;
+}
+.budget .perant .conten .cards .text-top .text .left .top {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #101828;
+}
+.budget .perant .conten .cards .text-top .text .left span {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.125rem 0.5rem;
+  border-radius: 0.625rem;
+}
+/* bg-lines */
+.budget .perant .conten .cards .bg-lines .f-line {
+  background-color: #e5e7eb;
+  width: 100%;
+  height: 0.4375rem;
+  border-radius: 0.3125rem;
+}
+/* card-1 */
+.budget .perant .conten .card-1 {
+  margin-top: 1.5rem;
+}
+.budget .perant .conten .card-1 .icon {
+  background-color: #ffedd4;
+}
+.budget .perant .conten .card-1 .icon img {
+  filter: hue-rotate(120deg) contrast(3);
+}
+.budget .perant .conten .card-1 .text-top .text .left span {
+  color: #166534;
+  background-color: #dcfce7;
+}
+.budget .perant .conten .card-1 .bg-lines .l-line {
+  background-color: #ff6900;
+  width: 50%;
+  height: inherit;
+  border-radius: 0.3125rem;
+}
+/* card-2*/
+.budget .perant .conten .card-2 .icon {
+  background-color: #fee2e2;
+}
+.budget .perant .conten .card-2 .icon img {
+  filter: hue-rotate(140deg) contrast(3);
+}
+.budget .perant .conten .card-2 .text-top .text .left span {
+  color: #991b1b;
+  background-color: #fee2e2;
+}
+.budget .perant .conten .card-2 .bg-lines .l-line {
+  background-color: #fb2c36;
+  width: 100%;
+  height: inherit;
+  border-radius: 0.3125rem;
+}
+/* card-3 */
+.budget .perant .conten .card-3 .icon {
+  background-color: #fce7f3;
+}
+.budget .perant .conten .card-3 .text-top .text .left span {
+  color: #92400e;
+  background-color: #fef3c7;
+}
+.budget .perant .conten .card-3 .bg-lines .l-line {
+  background-color: #f6339a;
+  width: 80%;
+  height: inherit;
+  border-radius: 0.3125rem;
+}
+/* card-4 */
+.budget .perant .conten .card-4 .icon {
+  background-color: #dcfce7;
+}
+.budget .perant .conten .card-4 .text-top .text .left span {
+  color: #166534;
+  background-color: #dcfce7;
+}
+.budget .perant .conten .card-4 .bg-lines .l-line {
+  background-color: #00c951;
+  width: 86%;
+  height: inherit;
+  border-radius: 0.3125rem;
+}
+/* part 7 Income & expenses */
+/* header */
+.income-expenses .perant {
+  padding: 1rem;
+  border: 0.0625rem solid #e5e7eb;
+  background-color: #fff;
+  border-radius: 1.25rem;
+  margin-top: 1.5rem;
+  box-shadow: 0 0.125rem 0.125rem #d9dce0;
+}
+.income-expenses .perant .header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.income-expenses .perant .header h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #101828;
+}
+.income-expenses .perant .header .fa-chevron {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #2b3b5a;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.income-expenses .perant .header .fa-chevron:hover {
+  color: #101828;
+}
+/* names */
+.income-expenses .perant .names {
+  display: flex;
+  column-gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.income-expenses .perant .names .green,
+.red {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+.income-expenses .perant .names .green .color {
+  width: 0.625rem;
+  height: 0.625rem;
+  background-color: #10b981;
+  border-radius: 0.125rem;
+}
+.income-expenses .perant .names .red .color {
+  width: 0.625rem;
+  height: 0.625rem;
+  background-color: #ef4444;
+  border-radius: 0.125rem;
+}
+.income-expenses .perant .names span {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #64748b;
+}
+/* weeks */
+.income-expenses .perant .weeks {
+  display: flex;
+  justify-content: space-between;
+}
+.income-expenses .perant .weeks .week {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 25%;
+  height: 10rem;
+  row-gap: 0.5rem;
+}
+.income-expenses .perant .weeks .week .rows {
+  display: flex;
+  align-items: flex-end;
+  column-gap: 0.125rem;
+}
+.income-expenses .perant .weeks .week .row-1 {
+  width: 1rem;
+  height: 5.9375rem;
+  background-color: #10b981;
+  border-top-left-radius: 0.2rem;
+  border-top-right-radius: 0.2rem;
+  transition: background-color 0.3s ease;
+}
+.income-expenses .perant .weeks .week .row-2 {
+  width: 1rem;
+  height: 2.625rem;
+  background-color: #ef4444;
+  border-top-left-radius: 0.2rem;
+  border-top-right-radius: 0.2rem;
+  transition: background-color 0.3s ease;
+}
+.income-expenses .perant .weeks .week .num-week {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #64748b;
+}
+/* rows hover */
+.income-expenses .perant .weeks .week .row-1:hover {
+  background-color: #40c79a;
+}
+.income-expenses .perant .weeks .week .row-2:hover {
+  background-color: #f26969;
+}
+/* part 8 Account Summary */
+/* header */
+.account-summary .perant {
+  padding: 1rem;
+  border: 0.0625rem solid #e5e7eb;
+  background-color: #fff;
+  border-radius: 1.25rem;
+  margin-top: 1.5rem;
+  box-shadow: 0 0.125rem 0.125rem #d9dce0;
+}
+.account-summary .perant .header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.account-summary .perant .header h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #101828;
+}
+.account-summary .perant .header .fa-chevron {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #2b3b5a;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.account-summary .perant .header .fa-chevron:hover {
+  color: #101828;
+}
+/* cards */
+.account-summary .perant .conten .cards {
+  background-color: #f9fafb;
+  border-radius: 0.625rem;
+  padding: 0.75rem;
+  border: 0.0625rem solid #e5e7eb;
+  margin-top: 1rem;
+  transition: all 0.3s;
+}
+.account-summary .perant .conten .icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  margin-bottom: 0.3125rem;
+}
+.account-summary .perant .conten .icon img {
+  width: 1.2rem;
+}
+/* text-top */
+.account-summary .perant .conten .cards .text-top {
+  display: flex;
+  align-items: center;
+  column-gap: 0.7rem;
+}
+/* text */
+.account-summary .perant .conten .cards .text-top .text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+}
+.account-summary .perant .conten .cards .text-top .text .right .top {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #101828;
+}
+.account-summary .perant .conten .cards .text-top .text .right .bottom {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #6a7282;
+}
+.account-summary .perant .conten .cards .text-top .text .left {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #101828;
+}
+/* bg icons */
+.account-summary .perant .conten .card-1 .icon {
+  background-color: #dcfce7;
+}
+.account-summary .perant .conten .card-2 .icon {
+  background-color: #dbfce7;
+}
+.account-summary .perant .conten .card-2 .icon img {
+  filter: hue-rotate(280deg) contrast(3);
+}
+.account-summary .perant .conten .card-3 .icon {
+  background-color: #f3e8ff;
+}
+.account-summary .perant .conten .card-3 .text-top .text .left {
+  color: #e7000b;
+}
+/* part 9 Payment methods */
+/* header */
+.payment-methods .perant {
+  padding: 1rem;
+  border: 0.0625rem solid #e5e7eb;
+  background-color: #fff;
+  border-radius: 1.25rem;
+  margin-top: 1.5rem;
+  box-shadow: 0 0.125rem 0.125rem #d9dce0;
+}
+.payment-methods .perant .header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.payment-methods .perant .header h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #101828;
+}
+.payment-methods .perant .header .fa-chevron {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #2b3b5a;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.payment-methods .perant .header .fa-chevron:hover {
+  color: #101828;
+}
+/* cards */
+/* front */
+.payment-methods .perant .conten .cards .front {
+  border-radius: 1rem;
+  padding: 1.75rem;
+  color: #fff;
+  position: relative;
+}
+.payment-methods .perant .conten .cards .front .top .impty {
+  width: 3.3rem;
+  height: 2.3rem;
+  background-color: #f0f0f059;
+  border-radius: 0.3125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.payment-methods .perant .conten .cards .front .top .impty2 {
+  width: 1.9rem;
+  height: 1.25rem;
+  background-color: #f0f0f09a;
+  border-radius: 0.3125rem;
+}
+.payment-methods .perant .conten .cards .image {
+  width: 2.2rem;
+}
+.payment-methods .perant .conten .cards .front .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+/* num */
+.payment-methods .perant .conten .cards .front .num {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+/* bottom */
+.payment-methods .perant .conten .cards .front .bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.payment-methods .perant .conten .cards .front .bottom .one {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #e4e7eb;
+}
+.payment-methods .perant .conten .cards .front .bottom .two {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+/* position */
+.payment-methods .perant .conten .cards .front .position {
+  background-color: #ffffff44;
+  backdrop-filter: blur(0.25rem);
+  width: fit-content;
+  padding: 0.25rem 0.5rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+/* card1 front */
+.payment-methods .perant .conten .card-1 .front {
+  background-color: #372aac;
+}
+/* card2 front */
+.payment-methods .perant .conten .card-2 .front {
+  background-color: #c70036;
+}
+/* card3 front */
+.payment-methods .perant .conten .card-3 .front {
+  background-color: #193cb8;
+}
+/* back */
+.payment-methods .perant .conten .cards .back {
+  border-radius: 1rem;
+  padding: 1rem;
+  background: linear-gradient(to right, #0d1422, #202e4b);
+  transform: rotateY(180deg);
+}
+/* impty */
+.payment-methods .perant .conten .cards .back .impty {
+  width: 100%;
+  height: 2rem;
+  background: linear-gradient(to right, #040404, #282828);
+  border-radius: 0.1875rem;
+  margin-bottom: 0.3125rem;
+}
+/* text */
+.payment-methods .perant .conten .cards .back .text {
+  font-size: 0.625rem;
+  font-weight: 600;
+  color: #ffffff7a;
+  margin-bottom: 0.3125rem;
+}
+/* the-num */
+.payment-methods .perant .conten .cards .back .the-num {
+  background-color: #eff3f7;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.3125rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.625rem;
+}
+.payment-methods .perant .conten .cards .back .the-num .line {
+  width: 70%;
+  height: 0.6rem;
+  background-color: #dde1e5;
+}
+.payment-methods .perant .conten .cards .back .the-num .last-nums {
+  color: #000000d9;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+/* bottom */
+.payment-methods .perant .conten .cards .back .bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: start;
+}
+.payment-methods .perant .conten .cards .back .bottom .cvv {
+  width: 3.375rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #d1d5dc;
+}
+.payment-methods .perant .conten .cards .back .bottom .numbers {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #111827;
+  background-color: #fff;
+  border-radius: 0.3125rem;
+  width: fit-content;
+  padding: 0.5rem 0.75rem;
+}
+/* bottom .id */
+.payment-methods .perant .conten .card-3 .back .bottom .id {
+  width: 4.3rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #d1d5dc;
+}
+/* cards */
+.payment-methods .perant .conten .cards {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+  margin-bottom: 1rem;
+}
+.payment-methods .perant .conten .cards .front,
+.back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+.payment-methods .perant .conten .p-card:hover > .cards {
+  transform: rotateY(180deg);
+}
