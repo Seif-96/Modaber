@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="the-ux-review-blog.vercel.app">
   <link rel="icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="CSS/aos.css">
   <link rel="stylesheet" href="CSS/all.min.css">
   <link rel="stylesheet" href="CSS/style.css">
   <link rel="stylesheet" href="CSS/media.css">
@@ -15,7 +16,7 @@
 <body>
   <!-- the-aside -->
   <section class="the-aside">
-    <aside>
+    <aside data-aos="fade-left" data-aos-duration="800" data-aos-once="true">
       <div class="top">
         <div class="coins-icon">
           <img loading="lazy" decoding="async" src="images/icons/coins-solid-full.png" alt="icons/coins-solid">
@@ -82,7 +83,8 @@
   <!-- left-cards -->
   <main class="left-cards">
     <!-- part one navbar -->
-    <section class="the-navbar">
+    <section class="the-navbar" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="800"
+      data-aos-once="true">
       <header class="header">
         <div class="container">
           <nav class="nav-body">
@@ -130,7 +132,8 @@
       </header>
     </section>
     <!-- part 2 Expenses -->
-    <section class="expenses-cards">
+    <section class="expenses-cards" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="800"
+      data-aos-once="true">
       <div class="container">
         <div class="cards">
           <div class="card card-1">
@@ -160,10 +163,11 @@
         </div>
       </div>
     </section>
-    <section class="the-grid">
+    <section class="the-grid" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="800"
+      data-aos-once="true">
       <!-- الأنشطة الحديثة -->
       <!-- part 3  Modern activities -->
-      <section class="modern-activities">
+      <section class="modern-activities" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
         <div class="container">
           <div class="text-head">
             <h3>الأنشطة الحديثة</h3>
@@ -207,7 +211,7 @@
       </section>
       <!-- المعاملات الأخيرة -->
       <!-- part 4 recent transactions -->
-      <section class="recent-transactions">
+      <section class="recent-transactions" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
         <div class="container">
           <div class="perant">
             <div class="header">
@@ -459,7 +463,7 @@
       </section>
       <!-- الفواتير الشهرية -->
       <!-- part 5 monthly bills -->
-      <section class="monthly-bills">
+      <section class="monthly-bills" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
         <div class="container">
           <div class="perant">
             <div class="header">
@@ -509,7 +513,7 @@
       </section>
       <!-- نظرة عامة على الميزانية -->
       <!-- part 6 budget -->
-      <section class="budget">
+      <section class="budget" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
         <div class="container">
           <div class="perant">
             <div class="header">
@@ -635,7 +639,7 @@
       </section>
       <!-- الدخل مقابل المصروفات -->
       <!-- part 7 Income & expenses -->
-      <section class="income-expenses">
+      <section class="income-expenses" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
         <div class="container">
           <div class="perant">
             <div class="header">
@@ -687,7 +691,7 @@
       </section>
       <!-- ملخص الحساب -->
       <!-- part 8 Account Summary -->
-      <section class="account-summary">
+      <section class="account-summary" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
         <div class="container">
           <div class="perant">
             <div class="header">
@@ -751,7 +755,7 @@
       </section>
       <!-- وسائل الدفع -->
       <!-- part 9 Payment methods -->
-      <section class="payment-methods">
+      <section class="payment-methods" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
         <div class="container">
           <div class="perant">
             <div class="header">
@@ -886,6 +890,8 @@
       </section>
     </section>
   </main>
+  <script src="JS/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 
 </html>
